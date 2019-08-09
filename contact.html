@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Sprint Challenge - Contact</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="flex-container">
+          <a class="logo" href="index.html">
+            <h1 class="logo">Lambda</h1>
+          </a>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="flex-container">
+          <img
+            src="/img/jumbo-about.png"
+            alt="car headlights and taillights blurring on a highway"
+          />
+        </div>
+        <section class="top-content content about">
+          <div class="text-container">
+            <h2>Contact</h2>
+            <p>
+              Questions about our services? Use the form below to get in touch!
+            </p>
+          </div>
+        </section>
+      </header>
+      <section class="middle-content">
+        <div class="flex-container">
+          <form class="contact-form" onSubmit="handleFormSubmit">
+            <div class="form-input">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" />
+            </div>
+            <div class="form-input">
+              <label for="form-email">Email</label>
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </div>
+            <div class="form-input">
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="What can we help you with?"
+              ></textarea>
+            </div>
+            <div class="form-input">
+              <input class="card-button" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Products</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </footer>
+    </div>
+    <!-- container -->
+  </body>
+</html>

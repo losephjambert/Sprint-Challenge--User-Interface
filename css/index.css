@@ -384,6 +384,38 @@ footer nav a {
   font-size: 1em;
 }
 
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 auto 25px 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+}
+.form-input {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+}
+.form-input label {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+}
+.form-input input {
+  width: 200px;
+  border: 2px solid black;
+}
+.form-input textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid black;
+}
+.form-input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
 /* Animations */
 @keyframes hover_state {
   0% {
