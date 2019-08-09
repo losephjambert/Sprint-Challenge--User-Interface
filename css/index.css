@@ -169,6 +169,10 @@ header nav a {
   margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .top-content {
   display: flex;
   flex-wrap: wrap;
