@@ -218,6 +218,12 @@ header img {
   padding-bottom: 20px;
 }
 
+.top-content.about .text-container {
+  width: 100%;
+  padding: 0 2%;
+  padding-bottom: 20px;
+}
+
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
@@ -320,4 +326,24 @@ footer nav a {
 }
 .boxes .box:nth-child(10) {
   background-color: var(--box10-bgc);
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card-image {
+  order: 1;
+}
+.card-title {
+  order: 2;
+  font-size: 1.2em;
+}
+.card-text {
+  order: 3;
+  font-size: 0.9em;
+}
+.card-button {
+  order: 4;
 }
