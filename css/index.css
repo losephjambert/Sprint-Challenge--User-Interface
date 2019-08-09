@@ -229,6 +229,12 @@ header img {
   border-bottom: 1px dashed black;
 }
 
+.middle-content.about {
+  border: none;
+  padding: 0 15px;
+  margin-bottom: 0px;
+}
+
 .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
@@ -332,6 +338,16 @@ footer nav a {
 .card {
   display: flex;
   flex-flow: column nowrap;
+  flex: 0 0 47%;
+  border-bottom: 1px dashed black;
+  padding: 0 0 20px 0;
+  margin: 0 0 50px 0;
+}
+.card:nth-child(odd) {
+  margin-right: 1.5%;
+}
+.card:nth-child(even) {
+  margin-left: 1.5%;
 }
 .card-image {
   order: 1;
@@ -339,11 +355,22 @@ footer nav a {
 .card-title {
   order: 2;
   font-size: 1.2em;
+  margin: 15px 0 0 0;
+  padding: 0;
 }
 .card-text {
   order: 3;
   font-size: 0.9em;
+  margin: 20px 0;
+  padding: 0;
 }
 .card-button {
   order: 4;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid black;
+  outline: none;
+  border-radius: 10px;
+  width: 125px;
+  padding: 10px 0;
+  font-size: 1em;
 }
