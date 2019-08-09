@@ -190,6 +190,10 @@ header nav a {
   text-decoration: none;
 }
 
+header img {
+  margin: 25px 0;
+}
+
 .container {
   width: 800px;
   margin: 0 auto;
