@@ -406,16 +406,55 @@ footer nav a {
 .form-input input {
   width: 200px;
   border: 2px solid black;
+  padding: 10px 0 10px 5px;
 }
 .form-input textarea {
   width: 100%;
   min-height: 200px;
   border: 2px solid black;
+  padding: 10px;
 }
 .form-input:not(:last-child) {
   margin-bottom: 25px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+
+  header nav {
+    margin: 25px 0;
+  }
+
+  header nav,
+  footer nav {
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: flex-start;
+  }
+  header nav a,
+  footer nav a {
+    margin-bottom: 10px;
+  }
+
+  .flex-container {
+    flex-flow: column nowrap;
+  }
+
+  .card {
+    min-width: 300px;
+    flex: 1 1 95%;
+  }
+  .card:nth-child(odd),
+  .card:nth-child(even) {
+    margin: 0 auto 50px;
+  }
+  .card-text {
+    max-width: 300px;
+  }
+}
 /* Animations */
 @keyframes hover_state {
   0% {
